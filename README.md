@@ -15,7 +15,7 @@ Here is a high-level overview of how the AI Debugging Assistant works:
 
 ```mermaid
 graph TD
-    A[User Input (Code/Error)] -->|Submit| B(Streamlit App);
+    A["User Input (Code/Error)"] -->|Submit| B(Streamlit App);
     B -->|Build Prompt| C{Prompt Builder};
     C -->|Construct Prompt| D[Gemini Client];
     D -->|Send Request| E((Google Gemini API));
